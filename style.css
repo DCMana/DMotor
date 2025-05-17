@@ -26,6 +26,24 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+}
+
+header .header-svg {
+  height: 40px; 
+  width: auto;
+  display: none; 
+}
+@media (min-width: 600px) {
+  header .header-svg {
+    display: inline-block;
+  }
+}
+
 header .brand-title {
   font-family: var(--font-headings);
   font-size: 2.8rem;
@@ -79,7 +97,6 @@ nav a:hover::after {
   width: 100%;
 }
 
-
 main {
   max-width: 900px;
   margin: 2rem auto;
@@ -102,7 +119,14 @@ section h2 {
   margin-bottom: 1.5rem;
 }
 
-/* --- Inicio Section --- */
+section .section-intro {
+  font-size: 1.05rem;
+  color: #555;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+}
+
 #inicio .section-content {
   display: flex;
   flex-wrap: wrap;
@@ -124,8 +148,6 @@ section h2 {
   height: auto;
 }
 
-
-/* --- Autores Section --- */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -154,7 +176,6 @@ section h2 {
   font-weight: 700;
 }
 
-/* --- Factores Section --- */
 .factor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -171,8 +192,15 @@ section h2 {
   display: block;
   margin-bottom: 0.5rem;
 }
+.factor-item p em { /* Para "Sabías que" o "Ejemplo" */
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 0.8rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #ddd;
+}
 
-/* --- Hitos Motores & Estimulación (Tabs & Accordion) --- */
 .age-tabs {
   display: flex;
   justify-content: center;
@@ -215,6 +243,35 @@ section h2 {
 .timeline-svg {
   margin-bottom: 1rem;
 }
+.timeline-svg text {
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+.timeline-svg g:hover circle{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.age-content h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+.age-content > p { 
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--accent-color);
+  padding-left: 10px;
+}
+.age-content ul ul { 
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 25px;
+  list-style-type: circle;
+}
+.age-content li {
+  margin-bottom: 0.5rem;
+}
 
 .stimulation-accordion .accordion-item {
   margin-bottom: 0.5rem;
@@ -234,7 +291,7 @@ section h2 {
   transition: background-color 0.3s;
 }
 .accordion-header:hover {
-  background-color: #76c876; /* Darker green */
+  background-color: #76c876; 
 }
 .accordion-content {
   padding: 0 1rem;
@@ -245,9 +302,6 @@ section h2 {
   border: 1px solid #eee;
   border-top: none;
   border-radius: 0 0 5px 5px;
-}
-.accordion-content.active {
-   /* padding: 1rem; Will be set by JS */
 }
 .accordion-content ul {
   list-style: none;
@@ -260,9 +314,16 @@ section h2 {
 .accordion-content li:last-child {
   border-bottom: none;
 }
+.stimulation-accordion .accordion-content > p { 
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+.stimulation-accordion .accordion-content em { 
+  color: #555;
+  font-size: 0.9em;
+}
 
-
-/* --- Simulador Section --- */
 .simulator-controls {
   display: grid;
   gap: 1rem;
@@ -284,7 +345,7 @@ section h2 {
 }
 #sim-actividades-checkboxes {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Ajuste para textos más largos */
   gap: 0.5rem;
 }
 #sim-actividades-checkboxes label {
@@ -295,17 +356,74 @@ section h2 {
 }
 #sim-actividades-checkboxes input[type="checkbox"] {
   margin-right: 0.5rem;
+  flex-shrink: 0; /* Evita que el checkbox se encoja */
 }
 
 #resultadoSimulacion {
   margin-top: 1.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background: var(--card-background);
   border-radius: 8px;
   min-height: 50px;
 }
 #resultadoSimulacion p {
-  margin:0;
+  margin:0 0 0.5rem 0;
+}
+#resultadoSimulacion .sim-desc {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 1rem;
+}
+#resultadoSimulacion .sim-warning {
+  color: #D8000C; 
+  background-color: #FFD2D2;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+#resultadoSimulacion h4 {
+  color: var(--primary-color);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+#resultadoSimulacion ul {
+  list-style: none;
+  padding-left: 0;
+}
+#resultadoSimulacion li {
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #eee;
+}
+#resultadoSimulacion li:last-child {
+  border-bottom: none;
+}
+#resultadoSimulacion li strong {
+  color: var(--text-color);
+}
+#resultadoSimulacion li em { 
+  font-size: 0.85em;
+  color: #555;
+  display: block; /* Para que aparezca en nueva línea si es largo */
+  margin-top: 0.2rem;
+}
+#resultadoSimulacion .sim-summary {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+#resultadoSimulacion .sim-summary.good { background-color: #e6ffed; color: #006421; }
+#resultadoSimulacion .sim-summary.medium { background-color: #fff4e6; color: #995f00; }
+#resultadoSimulacion .sim-summary.neutral { background-color: #f0f0f0; color: #555; }
+
+#resultadoSimulacion .sim-disclaimer {
+  font-size: 0.85em;
+  color: #777;
+  margin-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  padding-top: 0.8rem;
+  text-align: center;
 }
 
 .action-button {
@@ -317,14 +435,13 @@ section h2 {
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s, transform 0.2s;
-  display: inline-block; /* For centering if needed */
+  display: inline-block; 
 }
 .action-button:hover {
   background-color: var(--button-hover);
   transform: scale(1.05);
 }
 
-/* --- Footer --- */
 footer {
   background: var(--primary-color);
   color: white;
@@ -332,8 +449,14 @@ footer {
   padding: 1.5rem;
   margin-top: 2rem;
 }
+footer .footer-svg {
+  width: 100%;
+  max-width: 200px;
+  height: 30px;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
 
-/* --- Modal --- */
 .modal {
   display: none;
   position: fixed;
@@ -378,7 +501,6 @@ footer {
   color: var(--secondary-color);
 }
 
-/* Animations */
 .fade-in { animation: fadeInAnimation 1s ease-in-out; }
 .slide-up { animation: slideUpAnimation 1s ease-in-out; }
 
@@ -401,7 +523,6 @@ footer {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   header .brand-title {
     font-size: 2.2rem;
@@ -411,7 +532,7 @@ footer {
     gap: 0.5rem;
   }
   .cards {
-    grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    grid-template-columns: 1fr; 
   }
   .factor-grid {
     grid-template-columns: 1fr;
@@ -422,5 +543,8 @@ footer {
   .modal-content {
     width: 90%;
     margin: 20% auto;
+  }
+  #sim-actividades-checkboxes {
+    grid-template-columns: 1fr; /* Stack checkboxes en móviles */
   }
 }
