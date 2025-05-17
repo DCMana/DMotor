@@ -9,8 +9,17 @@
 </head>
 <body>
   <header>
-    <h1 class="brand-title">Pequeños Pasos, Grandes Saltos</h1>
-    <p class="subtitle">Explorando el Desarrollo Motor en la Infancia</p>
+    <div class="header-content">
+        <!-- SVG más elaborado para el header: Niños jugando o siluetas en movimiento -->
+        <svg class="header-svg" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="15" cy="25" r="4" fill="#FFD700"/> <path d="M15 29 v-10 l5 -2 l5 2 v10 z" fill="#FFD700" stroke="#E6AC00" stroke-width="0.5"/> <!-- Niñ@ 1 -->
+            <circle cx="35" cy="20" r="4" fill="#ADD8E6"/> <path d="M35 24 v-10 l-5 3 l5 4 l5 -4 l-5 -3 z" fill="#ADD8E6" stroke="#87CEEB" stroke-width="0.5"/> <!-- Niñ@ 2 saltando -->
+            <circle cx="55" cy="25" r="4" fill="#90EE90"/> <path d="M55 29 v-10 l5 -2 l5 2 v10 z" fill="#90EE90" stroke="#69B069" stroke-width="0.5"/> <!-- Niñ@ 3 -->
+            <circle cx="75" cy="20" r="4" fill="#FFB6C1"/> <path d="M75 24 v-10 l-4 4 l8 0 l-4 -4 z" fill="#FFB6C1" stroke="#FF99AA" stroke-width="0.5"/> <!-- Niñ@ 4 con brazos arriba -->
+        </svg>
+        <h1 class="brand-title">Pequeños Pasos, Grandes Saltos</h1>
+    </div>
+    <p class="subtitle">Explorando y Potenciando el Desarrollo Motor en la Infancia</p>
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -25,74 +34,97 @@
 
   <main>
     <section id="inicio" class="fade-in">
-      <h2>¡Bienvenido/a al Mundo del Desarrollo Motor!</h2>
+      <h2>¡Bienvenido/a al Fascinante Mundo del Desarrollo Motor!</h2>
       <div class="section-content">
         <div class="text-content">
-          <p>El desarrollo motor es un viaje fascinante, un proceso continuo donde los niños y niñas adquieren habilidades físicas esenciales. Desde los primeros reflejos hasta la coordinación compleja para correr y saltar, cada etapa es crucial.</p>
-          <p>Esta página está diseñada para padres, educadores y cualquier persona interesada en comprender y fomentar el desarrollo motor infantil. Aquí encontrarás información sobre las teorías que lo explican, los factores que influyen, los hitos clave por edad y, lo más importante, cómo estimular este desarrollo de manera lúdica y efectiva.</p>
-          <p>¡Prepárate para descubrir cómo pequeños movimientos se convierten en grandes logros!</p>
+          <p>El desarrollo motor es un viaje extraordinario, un proceso continuo y dinámico mediante el cual los niños y niñas adquieren y refinan sus habilidades físicas. Desde los primeros reflejos instintivos hasta la compleja coordinación necesaria para correr, saltar, escribir o manipular objetos, cada etapa es un pilar fundamental para su crecimiento integral.</p>
+          <p>Esta plataforma interactiva está diseñada para padres, madres, educadores, terapeutas y cualquier persona apasionada por comprender y fomentar el desarrollo motor infantil. Aquí encontrarás información rigurosa y accesible sobre las teorías que lo sustentan, los múltiples factores que lo modulan, los hitos evolutivos clave por edad y, lo más importante, estrategias y actividades prácticas para estimular este desarrollo de manera lúdica, respetuosa y efectiva.</p>
+          <p>La estimulación temprana adecuada no solo potencia las habilidades físicas, sino que también sienta las bases para el desarrollo cognitivo, social y emocional. Al ofrecer un entorno rico en oportunidades y experiencias motrices, contribuimos a que los pequeños exploren el mundo con confianza, autonomía y alegría. ¡Prepárate para descubrir cómo cada pequeño movimiento se convierte en un gran logro en su camino de aprendizaje!</p>
         </div>
         <div class="image-content">
-          <!-- SVG: bebé sonriendo y jugando con bloques -->
-          <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" class="decorative-svg">
-            <rect x="10" y="80" width="50" height="50" rx="5" fill="#FFD700"/>
-            <circle cx="100" cy="50" r="30" fill="#ADD8E6"/>
-            <path d="M90,60 Q100,75 110,60" stroke="#333" stroke-width="2" fill="none" /> <!-- Sonrisa -->
-            <circle cx="93" cy="45" r="3" fill="#333"/> <!-- Ojo izq -->
-            <circle cx="107" cy="45" r="3" fill="#333"/> <!-- Ojo der -->
-            <rect x="120" y="90" width="30" height="30" rx="3" fill="#90EE90"/>
-            <text x="50" y="140" font-family="Pacifico" font-size="16" fill="#ff69b4">¡A Jugar!</text>
+          <!-- SVG más elaborado: Bebé gateando hacia unos bloques de colores, con una expresión de curiosidad y esfuerzo. -->
+          <svg viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg" class="decorative-svg">
+            <defs>
+              <radialGradient id="gradBebe" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                <stop offset="0%" style="stop-color:rgb(255,229,180);stop-opacity:1" /> <!-- Piel clara -->
+                <stop offset="100%" style="stop-color:rgb(245,219,170);stop-opacity:1" />
+              </radialGradient>
+            </defs>
+            <!-- Bloques -->
+            <rect x="140" y="110" width="30" height="30" rx="3" fill="#FF6347" stroke="#D2523A" stroke-width="1"/>
+            <rect x="160" y="80" width="30" height="30" rx="3" fill="#ADD8E6" stroke="#87CEEB" stroke-width="1"/>
+            <rect x="130" y="140" width="30" height="30" rx="3" fill="#90EE90" stroke="#69B069" stroke-width="1"/>
+            <!-- Bebé gateando -->
+            <ellipse cx="70" cy="140" rx="25" ry="18" fill="url(#gradBebe)" transform="rotate(-10 70 140)"/> <!-- Cuerpo/pañal -->
+            <circle cx="60" cy="100" r="20" fill="url(#gradBebe)"/> <!-- Cabeza -->
+            <path d="M53,95 Q50,90 53,85" stroke="#A0522D" fill="none" stroke-width="1.5" stroke-linecap="round"/> <!-- Pelo 1 -->
+            <path d="M60,90 Q57,85 60,80" stroke="#A0522D" fill="none" stroke-width="1.5" stroke-linecap="round"/> <!-- Pelo 2 -->
+            <circle cx="55" cy="100" r="2" fill="#333"/> <!-- Ojo Izq -->
+            <circle cx="68" cy="98" r="2" fill="#333"/> <!-- Ojo Der -->
+            <path d="M58,108 Q62,112 66,108" stroke="#333" stroke-width="1" fill="none"/> <!-- Boca -->
+            <!-- Brazos y piernas (simplificado) -->
+            <ellipse cx="90" cy="115" rx="10" ry="15" fill="url(#gradBebe)" transform="rotate(30 90 115)"/> <!-- Brazo derecho -->
+            <ellipse cx="40" cy="120" rx="8" ry="12" fill="url(#gradBebe)" transform="rotate(-20 40 120)"/> <!-- Brazo izquierdo -->
+            <ellipse cx="50" cy="155" rx="12" ry="10" fill="url(#gradBebe)" transform="rotate(-15 50 155)"/> <!-- Pierna izquierda -->
+            <ellipse cx="85" cy="150" rx="15" ry="10" fill="url(#gradBebe)" transform="rotate(10 85 150)"/> <!-- Pierna derecha -->
+            <text x="30" y="40" font-family="Pacifico" font-size="20" fill="#ff69b4">¡Explorando!</text>
           </svg>
         </div>
       </div>
     </section>
 
     <section id="autores" class="slide-up">
-      <h2>Autores y Teorías Fundamentales</h2>
+      <h2>Autores y Teorías Fundamentales del Desarrollo Motor</h2>
+      <p class="section-intro">Comprender el desarrollo motor implica conocer las perspectivas de investigadores clave que han moldeado nuestro entendimiento. Sus teorías, aunque a veces divergentes, ofrecen un marco valioso para interpretar la evolución de las habilidades motrices en la infancia. Haz clic en cada autor para conocer más sobre sus aportes.</p>
       <div class="cards">
-        <div class="card" data-autor="gesell"><h3>Gesell</h3><p>Maduración y reloj biológico.</p></div>
-        <div class="card" data-autor="zelazo"><h3>Zelazo y Collins</h3><p>Estimulación e influencia activa.</p></div>
-        <div class="card" data-autor="coghill"><h3>Coghill</h3><p>Leyes céfalo-caudal y próximo-distal.</p></div>
-        <div class="card" data-autor="solomons"><h3>Solomons</h3><p>Impacto cultural en el desarrollo.</p></div>
+        <div class="card" data-autor="gesell"><h3>Arnold Gesell</h3><p>Teoría de la Maduración y el "reloj biológico".</p></div>
+        <div class="card" data-autor="zelazo"><h3>Zelazo y Collins</h3><p>Impacto de la Estimulación y Aprendizaje Activo.</p></div>
+        <div class="card" data-autor="coghill"><h3>George E. Coghill</h3><p>Leyes Céfalo-Caudal y Próximo-Distal.</p></div>
+        <div class="card" data-autor="solomons"><h3>G. Solomons</h3><p>Influencia del Contexto Cultural.</p></div>
       </div>
     </section>
 
     <section id="factores" class="fade-in">
-      <h2>Factores que Moldean el Desarrollo</h2>
+      <h2>Factores que Moldean el Viaje del Desarrollo Motor</h2>
+      <p class="section-intro">El desarrollo motor no ocurre en el vacío; es el resultado de una compleja interacción de múltiples influencias. Conocer estos factores nos ayuda a crear entornos más favorables para el crecimiento de cada niño y niña.</p>
       <div class="factor-grid">
         <div class="factor-item">
           <span class="factor-icon">🧬</span>
-          <h3>Genéticos</h3>
-          <p>La herencia biológica establece una base, influyendo en la talla, la predisposición a ciertas habilidades y el ritmo madurativo general.</p>
+          <h3>Factores Genéticos (Endógenos)</h3>
+          <p>Nuestra herencia biológica establece un plan maestro. Los genes influyen en la talla, la complexión, la predisposición a ciertas habilidades, el ritmo de maduración del sistema nervioso y la aparición de periodos sensibles. Por ejemplo, la edad de inicio de la marcha tiene un componente genético, aunque el ambiente lo module.</p>
+          <p><em>Sabías que...</em> Estudios en gemelos idénticos criados en ambientes diferentes han ayudado a discernir el peso relativo de la genética versus el entorno.</p>
         </div>
         <div class="factor-item">
           <span class="factor-icon">🌳</span>
-          <h3>Ambientales</h3>
-          <p>El entorno físico (espacio para moverse, seguridad) y social (interacción, apoyo) son cruciales. Un ambiente rico en estímulos y oportunidades fomenta la exploración.</p>
+          <h3>Factores Ambientales (Exógenos)</h3>
+          <p>El entorno físico (espacio seguro para moverse, disponibilidad de juguetes y materiales estimulantes) y el entorno social (interacciones con cuidadores, oportunidades de juego con pares) son cruciales. Un ambiente rico y variado fomenta la exploración, la práctica y el aprendizaje motor.</p>
+          <p><em>Ejemplo:</em> Un niño que crece en un hogar con escaleras probablemente desarrollará la habilidad de subirlas y bajarlas antes o con más pericia que uno sin esa experiencia diaria.</p>
         </div>
         <div class="factor-item">
           <span class="factor-icon">🌍</span>
-          <h3>Culturales</h3>
-          <p>Las prácticas de crianza, las costumbres y los valores de una cultura pueden acelerar o modular el desarrollo de ciertas habilidades motoras (Ej: estudio de Solomons en Yucatán).</p>
+          <h3>Factores Culturales (Exógenos)</h3>
+          <p>Las prácticas de crianza, las costumbres, los valores y las expectativas de una cultura pueden acelerar, retrasar o dar forma específica al desarrollo motor. Lo que se considera "normal" o "deseable" varía entre culturas.</p>
+          <p><em>Ejemplo:</em> El estudio de Solomons (1978) en Yucatán, México, mostró que bebés envueltos de forma ajustada (restringiendo movimiento) presentaban ciertos retrasos motores comparados con bebés de EEUU, pero luego podían alcanzar e incluso superar a otros en diferentes habilidades debido a otras prácticas culturales.</p>
         </div>
         <div class="factor-item">
           <span class="factor-icon">🥗</span>
-          <h3>Estilos de Vida</h3>
-          <p>La nutrición, el descanso adecuado, la higiene y las oportunidades de juego activo y ocio influyen directamente en la energía y capacidad del niño para desarrollarse.</p>
+          <h3>Estilos de Vida y Salud (Endógenos/Exógenos)</h3>
+          <p>La nutrición adecuada (especialmente en los primeros años), el descanso reparador, la higiene, y las oportunidades de juego activo influyen directamente en la energía, la salud ósea y muscular, y la capacidad del niño para aprender y desarrollarse. Enfermedades o alteraciones psicológicas también pueden impactar el curso normal del desarrollo.</p>
+          <p><em>Importante:</em> El acceso a servicios de salud y revisiones pediátricas regulares es vital para detectar y abordar tempranamente cualquier desviación en el desarrollo.</p>
         </div>
       </div>
     </section>
 
     <section id="hitosMotores" class="slide-up">
-      <h2>Hitos Motores: Un Viaje por Edades</h2>
-      <!-- SVG: linea de tiempo con bebés en diferentes etapas -->
-      <svg width="100%" height="80" viewBox="0 0 800 80" class="timeline-svg">
-        <line x1="20" y1="40" x2="780" y2="40" stroke="#ffb347" stroke-width="4"/>
-        <circle cx="100" cy="40" r="10" fill="#ff6347"/><text x="80" y="70" fill="#333" font-size="12">0-6m</text>
-        <circle cx="250" cy="40" r="10" fill="#ffb347"/><text x="230" y="70" fill="#333" font-size="12">6-12m</text>
-        <circle cx="400" cy="40" r="10" fill="#90ee90"/><text x="380" y="70" fill="#333" font-size="12">1-2a</text>
-        <circle cx="550" cy="40" r="10" fill="#add8e6"/><text x="530" y="70" fill="#333" font-size="12">2-4a</text>
-        <circle cx="700" cy="40" r="10" fill="#ffd700"/><text x="680" y="70" fill="#333" font-size="12">4-6a</text>
+      <h2>Hitos Motores: Un Viaje Progresivo por Edades</h2>
+      <p class="section-intro">El desarrollo motor sigue una secuencia general, aunque el ritmo exacto varía en cada niño/a. Estos hitos son guías, no reglas estrictas. Representan las nuevas capacidades que van emergiendo y consolidándose.</p>
+      <svg width="100%" height="100" viewBox="0 0 800 100" class="timeline-svg">
+        <line x1="20" y1="50" x2="780" y2="50" stroke="var(--primary-color)" stroke-width="4" stroke-linecap="round"/>
+        <g transform="translate(80 50)"> <circle cx="0" cy="0" r="12" fill="#ff6347"/> <path d="M -5 -2 Q 0 -7 5 -2 M -3 2 L 3 2" stroke="white" stroke-width="1.5" fill="none"/> <text x="-15" y="35" fill="#333" font-size="12">0-6m</text> </g>
+        <g transform="translate(230 50)"> <circle cx="0" cy="0" r="12" fill="#ffb347"/> <rect x="-5" y="-5" width="10" height="3" fill="white" rx="1"/> <ellipse cx="0" cy="3" rx="5" ry="2" fill="white"/> <text x="-20" y="35" fill="#333" font-size="12">6-12m</text> </g>
+        <g transform="translate(380 50)"> <circle cx="0" cy="0" r="12" fill="#90ee90"/> <line x1="-4" y1="5" x2="0" y2="-5" stroke="white" stroke-width="2"/> <line x1="4" y1="5" x2="0" y2="-5" stroke="white" stroke-width="2"/> <text x="-15" y="35" fill="#333" font-size="12">1-2a</text> </g>
+        <g transform="translate(530 50)"> <circle cx="0" cy="0" r="12" fill="#add8e6"/> <path d="M -5 0 Q 0 -5 5 0 M -3 3 A 3 3 0 0 1 3 3" stroke="white" stroke-width="1.5" fill="none"/> <text x="-15" y="35" fill="#333" font-size="12">2-4a</text> </g>
+        <g transform="translate(680 50)"> <circle cx="0" cy="0" r="12" fill="#ffd700"/> <circle cx="0" cy="0" r="4" fill="white"/> <line x1="-6" y1="-6" x2="-2" y2="-2" stroke="white" stroke-width="1.5"/> <text x="-15" y="35" fill="#333" font-size="12">4-6a</text> </g>
       </svg>
       <div class="age-tabs">
         <button class="tab-button active" onclick="showAgeContent('content-0-6m')">0-6 Meses</button>
@@ -104,117 +136,234 @@
 
       <div id="age-content-container">
         <div id="content-0-6m" class="age-content active">
-          <h3>Reflejos y Primeros Controles (0-6 Meses)</h3>
+          <h3>Reflejos, Control Postural Inicial y Exploración Sensorial (0-6 Meses)</h3>
+          <p><em>En esta etapa fundamental, el bebé pasa de movimientos reflejos a acciones más voluntarias. El control de la cabeza es el primer gran logro, seguido por la capacidad de girar el cuerpo. La exploración visual y táctil es intensa.</em></p>
           <ul>
-            <li><strong>Reflejos primarios:</strong> Succión, búsqueda, Moro, prensión palmar, marcha automática.</li>
-            <li><strong>Control Cefálico:</strong> Sostiene la cabeza (2-4 meses).</li>
-            <li><strong>Rodar:</strong> Gira de boca abajo a boca arriba y viceversa (4-6 meses).</li>
-            <li><strong>Alcance:</strong> Intenta coger objetos cercanos.</li>
-            <li><strong>Visual:</strong> Sigue objetos con la mirada.</li>
+            <li><strong>Reflejos primarios:</strong> Succión, búsqueda, Moro (sobresalto), prensión palmar y plantar, marcha automática. Estos reflejos son vitales para la supervivencia y algunos son la base de movimientos futuros.</li>
+            <li><strong>Control Cefálico:</strong> Alrededor de los 2 meses, levanta la cabeza momentáneamente boca abajo. Hacia los 4 meses, la sostiene bien erguida cuando está en brazos o boca abajo.</li>
+            <li><strong>Seguimiento Visual:</strong> Sigue objetos en movimiento con la mirada, primero horizontalmente, luego verticalmente y en círculo.</li>
+            <li><strong>Manos a la línea media y a la boca:</strong> Descubre sus manos (2-3 meses) y se las lleva a la boca, un paso importante para la autoexploración.</li>
+            <li><strong>Agarre Voluntario:</strong> El reflejo de prensión da paso a un agarre más intencionado. Intenta alcanzar y coger objetos (3-5 meses), aunque la coordinación ojo-mano aún se está desarrollando.</li>
+            <li><strong>Rodar/Girar:</strong> Aprende a girar de boca abajo a boca arriba (supino) y viceversa (prono), usualmente entre los 4 y 6 meses. Esto le da una nueva perspectiva del mundo y es un precursor del gateo.</li>
+            <li><strong>Apoyo sobre antebrazos:</strong> Boca abajo, se apoya en los antebrazos levantando cabeza y pecho (3-4 meses).</li>
           </ul>
         </div>
         <div id="content-6-12m" class="age-content">
-          <h3>Exploración y Movilidad (6-12 Meses)</h3>
+          <h3>Exploración Activa y Conquista de la Movilidad (6-12 Meses)</h3>
+          <p><em>¡Un período de cambios vertiginosos! El bebé gana independencia con la sedestación y el gateo. La manipulación de objetos se vuelve más precisa, y comienza la aventura de ponerse de pie.</em></p>
           <ul>
-            <li><strong>Sedestación:</strong> Se sienta sin apoyo (6-8 meses).</li>
-            <li><strong>Gateo:</strong> Se desplaza gateando (7-10 meses).</li>
-            <li><strong>Pinza inferior y superior:</strong> Coge objetos pequeños con los dedos.</li>
-            <li><strong>Ponerse de pie:</strong> Se agarra para levantarse (9-12 meses).</li>
-            <li><strong>Primeros pasos con apoyo.</strong></li>
+            <li><strong>Sedestación:</strong> Se sienta sin apoyo durante periodos cada vez más largos (6-8 meses). Inicialmente puede necesitar apoyarse con las manos (posición de trípode).</li>
+            <li><strong>Gateo:</strong> La mayoría de los bebés gatean entre los 7 y 10 meses, aunque algunos pueden usar otras formas de desplazamiento (arrastrarse, "gateo de oso"). El gateo es crucial para la coordinación bilateral, la fuerza y la percepción espacial.</li>
+            <li><strong>Paso de tumbado a sentado:</strong> Aprende a incorporarse solo.</li>
+            <li><strong>Pinza Inferior y Superior:</strong> Desarrolla la habilidad de coger objetos pequeños usando el pulgar y el índice (pinza inferior alrededor de los 7-9 meses, pinza superior más refinada hacia los 10-12 meses).</li>
+            <li><strong>Transferencia de objetos:</strong> Pasa un objeto de una mano a otra.</li>
+            <li><strong>Golpear objetos:</strong> Disfruta golpeando dos objetos entre sí.</li>
+            <li><strong>Ponerse de Pie:</strong> Se agarra a muebles para levantarse (8-10 meses) y puede mantenerse de pie con apoyo.</li>
+            <li><strong>Desplazamiento lateral con apoyo ("Cruising"):</strong> Camina de lado agarrándose a los muebles.</li>
+            <li><strong>Primeros Pasos con Apoyo:</strong> Hacia el final de esta etapa, algunos bebés dan sus primeros pasos si se les sostiene de las manos.</li>
           </ul>
         </div>
         <div id="content-1-2a" class="age-content">
-          <h3>¡A Caminar! (1-2 Años)</h3>
+          <h3>¡A Caminar y Explorar el Mundo Vertical! (1-2 Años)</h3>
+          <p><em>La marcha independiente es el gran protagonista. Con esta nueva habilidad, el niño/a amplía enormemente su capacidad de exploración y interacción con el entorno. La motricidad fina también avanza.</em></p>
           <ul>
-            <li><strong>Marcha independiente:</strong> Camina solo (12-18 meses).</li>
-            <li><strong>Sube escaleras:</strong> Gateando o con ayuda.</li>
-            <li><strong>Corre</strong> (de forma algo torpe).</li>
-            <li><strong>Lanza pelotas</strong> (sin mucha dirección).</li>
-            <li><strong>Construye torres</strong> de pocos cubos.</li>
-            <li><strong>Garabatea.</strong></li>
+            <li><strong>Marcha Independiente:</strong> La mayoría de los niños caminan solos entre los 12 y 18 meses. Al principio, la marcha es inestable, con piernas separadas y brazos en alto para equilibrio.</li>
+            <li><strong>Perfeccionamiento de la Marcha:</strong> Con la práctica, la marcha se vuelve más fluida, rápida y coordinada.</li>
+            <li><strong>Correr (inicial):</strong> Hacia los 18-24 meses, comienzan a correr, aunque de forma algo torpe y con dificultad para frenar o girar bruscamente.</li>
+            <li><strong>Subir y Bajar Escaleras:</strong> Inicialmente gateando o con mucha ayuda. Luego, pueden subir escalones de uno en uno agarrados de la mano o barandilla (hacia los 2 años). Bajar es más difícil.</li>
+            <li><strong>Lanzar Pelotas:</strong> Lanza una pelota pequeña, aunque sin mucha dirección ni fuerza.</li>
+            <li><strong>Patear una Pelota:</strong> Da patadas a una pelota grande.</li>
+            <li><strong>Construir Torres:</strong> Apila de 2 a 6 cubos.</li>
+            <li><strong>Garabateo:</strong> Realiza trazos y garabatos espontáneos con lápices o ceras.</li>
+            <li><strong>Pasar Páginas:</strong> Pasa varias páginas de un libro a la vez, luego de una en una (libros de cartón).</li>
+            <li><strong>Uso de la Cuchara:</strong> Comienza a usar la cuchara para comer, aunque con derrames.</li>
           </ul>
         </div>
         <div id="content-2-4a" class="age-content">
-          <h3>Habilidades en Expansión (2-4 Años)</h3>
+          <h3>Refinamiento de Habilidades y Mayor Autonomía (2-4 Años)</h3>
+          <p><em>En esta etapa, los niños ganan mucha soltura en sus movimientos gruesos como correr y saltar. La motricidad fina se refina notablemente, permitiendo tareas más complejas como dibujar o usar tijeras.</em></p>
           <ul>
-            <li><strong>Corre con soltura.</strong></li>
-            <li><strong>Salta</strong> con ambos pies.</li>
-            <li><strong>Sube y baja escaleras</strong> alternando pies (hacia los 4 años).</li>
-            <li><strong>Pedalea un triciclo.</strong></li>
-            <li><strong>Motricidad Fina:</strong> Dibuja círculos, líneas, usa tijeras (con supervisión), ensarta cuentas.</li>
-            <li><strong>Se viste/desviste</strong> con ayuda.</li>
+            <li><strong>Correr con Agilidad:</strong> Corren con más control, pueden esquivar obstáculos y cambiar de dirección.</li>
+            <li><strong>Saltar:</strong> Saltan con ambos pies juntos en el sitio (desde los 2 años). Más tarde, saltan hacia adelante y desde pequeñas alturas.</li>
+            <li><strong>Subir y Bajar Escaleras Alternando Pies:</strong> Hacia los 3-4 años, suben y bajan escaleras como los adultos, un pie por escalón, sin ayuda.</li>
+            <li><strong>Pedalear un Triciclo:</strong> Aprenden a pedalear y dirigir un triciclo (generalmente entre los 2.5 y 3.5 años).</li>
+            <li><strong>Equilibrio Monopodal:</strong> Pueden mantenerse sobre un pie durante unos segundos (hacia los 3 años).</li>
+            <li><strong>Motricidad Fina:</strong>
+                <ul>
+                    <li><strong>Dibujo:</strong> Pasan de garabatos a dibujar círculos, líneas horizontales/verticales, y las primeras representaciones figurativas (monigotes "cabezudos").</li>
+                    <li><strong>Uso de Tijeras:</strong> Comienzan a usar tijeras de punta redonda para hacer cortes simples (con supervisión).</li>
+                    <li><strong>Ensartar Cuentas:</strong> Pueden ensartar cuentas grandes en un cordón.</li>
+                    <li><strong>Construcciones:</strong> Realizan construcciones más elaboradas con bloques.</li>
+                    <li><strong>Vestido:</strong> Se quitan prendas sencillas y pueden empezar a ponerse algunas con ayuda.</li>
+                </ul>
+            </li>
           </ul>
         </div>
         <div id="content-4-6a" class="age-content">
-          <h3>Coordinación y Destreza (4-6 Años)</h3>
+          <h3>Coordinación Avanzada, Destreza y Preparación Escolar (4-6 Años)</h3>
+          <p><em>Los niños y niñas de esta edad muestran una gran coordinación y control en sus movimientos. Están listos para actividades deportivas más estructuradas y sus habilidades finas les permiten iniciar la preescritura y tareas de mayor precisión.</em></p>
           <ul>
-            <li><strong>Salta a la pata coja.</strong></li>
-            <li><strong>Trepa con agilidad.</strong></li>
-            <li><strong>Atrapa una pelota grande.</strong></li>
-            <li><strong>Motricidad Fina:</strong> Dibuja figuras reconocibles, copia letras, puede atarse los cordones (con práctica).</li>
-            <li><strong>Usa cubiertos con mayor habilidad.</strong></li>
-            <li><strong>Participa en juegos con reglas simples.</strong></li>
+            <li><strong>Habilidades Motoras Gruesas:</strong>
+                <ul>
+                    <li><strong>Saltar a la Pata Coja:</strong> Dominan el salto sobre un solo pie.</li>
+                    <li><strong>Trepar con Agilidad:</strong> Suben a estructuras de juego con confianza.</li>
+                    <li><strong>Atrapar Pelotas:</strong> Atrapan pelotas más pequeñas y lanzadas desde mayor distancia.</li>
+                    <li><strong>Lanzar con Precisión:</strong> Lanzan una pelota con mayor dirección y fuerza.</li>
+                    <li><strong>Correr y Cambiar de Ritmo:</strong> Pueden correr rápido, despacio, y detenerse con control.</li>
+                    <li><strong>Montar en Bicicleta:</strong> Muchos aprenden a montar en bicicleta (primero con ruedines, luego sin ellas).</li>
+                    <li><strong>Nadar:</strong> Pueden aprender los rudimentos de la natación.</li>
+                </ul>
+            </li>
+            <li><strong>Motricidad Fina:</strong>
+                <ul>
+                    <li><strong>Dibujo y Escritura:</strong> Dibujan figuras humanas más detalladas, copian formas geométricas (cuadrado, triángulo), escriben su nombre y algunas letras/números.</li>
+                    <li><strong>Colorear:</strong> Colorean respetando los bordes.</li>
+                    <li><strong>Uso de Tijeras:</strong> Recortan formas simples con mayor precisión.</li>
+                    <li><strong>Atarse los Cordones:</strong> Con práctica, algunos aprenden a atarse los cordones de los zapatos.</li>
+                    <li><strong>Uso de Cubiertos:</strong> Usan cuchillo y tenedor con bastante habilidad.</li>
+                    <li><strong>Manualidades:</strong> Disfrutan de actividades como plegar papel, usar pegamento, modelar.</li>
+                </ul>
+            </li>
+            <li><strong>Participación en Juegos:</strong> Comprenden y siguen reglas en juegos grupales y deportes sencillos.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="estimulacion" class="fade-in">
-      <h2>Estimulación Temprana: ¡Jugando se Aprende!</h2>
-      <p>La estimulación debe ser respetuosa, divertida y adaptada al ritmo de cada niño/a. Aquí algunas ideas:</p>
+      <h2>Estimulación Temprana: ¡Jugando se Aprende y se Crece!</h2>
+      <p class="section-intro">La estimulación temprana, realizada de forma lúdica y respetuosa, es una herramienta poderosa para potenciar el desarrollo motor. No se trata de "adelantar" al niño, sino de ofrecerle las experiencias adecuadas en el momento oportuno para que explore, descubra y desarrolle sus capacidades de forma natural y divertida.</p>
       <div class="stimulation-accordion">
         <div class="accordion-item">
-          <button class="accordion-header">0-6 Meses</button>
+          <button class="accordion-header">Estimulación para 0-6 Meses</button>
           <div class="accordion-content">
+            <p><strong>Objetivo Principal:</strong> Fomentar el control postural básico, la exploración sensorial y los primeros movimientos intencionados.</p>
             <ul>
-              <li><strong>Sensorial:</strong> Móviles coloridos, sonajeros, diferentes texturas (telas suaves, rugosas).</li>
-              <li><strong>Motricidad Gruesa:</strong> Tiempo boca abajo (tummy time) supervisado, masajes suaves, ayudarle a rodar.</li>
-              <li><strong>Motricidad Fina:</strong> Ofrecer objetos para que agarre, juegos de manos (ej. "cinco lobitos").</li>
-              <li><strong>Juegos:</strong> Hablarle, cantarle, mostrarle caras y expresiones.</li>
+              <li><strong>Sensorial Visual:</strong> Móviles de colores contrastantes (blanco, negro, rojo al principio), juguetes con caras, espejos irrompibles. <em>(Ayuda al seguimiento visual y reconocimiento).</em></li>
+              <li><strong>Sensorial Auditivo:</strong> Sonajeros de diferentes timbres, música suave, hablarle y cantarle con frecuencia. <em>(Estimula la localización de sonidos y el vínculo).</em></li>
+              <li><strong>Sensorial Táctil:</strong> Ofrecer diferentes texturas (telas suaves, rugosas, peluches, juguetes de goma). Masajes suaves por todo el cuerpo. <em>(Fomenta la conciencia corporal).</em></li>
+              <li><strong>Motricidad Gruesa:</strong>
+                <ul>
+                  <li><em>Tummy Time (Tiempo Boca Abajo):</em> Varios periodos cortos al día, siempre supervisado. Colocar juguetes interesantes delante para animar a levantar la cabeza. <em>(Fortalece cuello, espalda y hombros, previene plagiocefalia).</em></li>
+                  <li><em>Juegos de Rodar:</em> Ayudarle suavemente a iniciar el movimiento de giro.</li>
+                  <li><em>Balanceos Suaves:</em> En brazos o en una hamaca adecuada.</li>
+                </ul>
+              </li>
+              <li><strong>Motricidad Fina:</strong> Ofrecer sonajeros o anillas para que intente agarrar. Juegos de manos como "cinco lobitos" o abrir y cerrar sus manitas. <em>(Desarrolla el agarre y la coordinación ojo-mano inicial).</em></li>
+              <li><strong>Juegos Interactivos:</strong> "Cucú-trás" tapándote la cara, sonreírle mucho, imitar sus sonidos.</li>
             </ul>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-header">6-12 Meses</button>
+          <button class="accordion-header">Estimulación para 6-12 Meses</button>
           <div class="accordion-content">
+            <p><strong>Objetivo Principal:</strong> Promover la movilidad independiente (sedestación, gateo), la manipulación fina y la comprensión causa-efecto.</p>
             <ul>
-              <li><strong>Sensorial:</strong> Juguetes con luces y sonidos, libros de tela con texturas, explorar alimentos seguros.</li>
-              <li><strong>Motricidad Gruesa:</strong> Animar al gateo con obstáculos simples (cojines), juegos de arrastre, ayudarle a ponerse de pie.</li>
-              <li><strong>Motricidad Fina:</strong> Bloques para apilar y derribar, meter y sacar objetos de un recipiente, pasar páginas de libros de cartón.</li>
-              <li><strong>Juegos:</strong> "Cucú-trás", esconder objetos, imitar sonidos.</li>
+              <li><strong>Sensorial:</strong> Juguetes con luces, botones y sonidos variados. Libros de tela o cartón con texturas y solapas. Permitir la exploración segura de alimentos con las manos (BLW si se practica). Cajas con objetos variados para explorar.</li>
+              <li><strong>Motricidad Gruesa:</strong>
+                  <ul>
+                      <li><em>Fomentar la Sedestación:</em> Rodearle de cojines al principio, ofrecer juguetes atractivos para que los alcance estando sentado.</li>
+                      <li><em>Animar al Gateo:</em> Crear un espacio seguro y amplio. Colocar juguetes un poco fuera de su alcance para motivarle. Crear pequeños "circuitos" con cojines o túneles de gateo. <em>(El gateo es crucial para la coordinación bilateral, fuerza, percepción espacial y desarrollo visual).</em></li>
+                      <li><em>Juegos de Arrastre y Empuje:</em> Juguetes que pueda empujar o tirar una vez que gatee o intente ponerse de pie.</li>
+                      <li><em>Ponerse de Pie:</em> Facilitar muebles estables y seguros a los que pueda agarrarse.</li>
+                  </ul>
+              </li>
+              <li><strong>Motricidad Fina:</strong>
+                  <ul>
+                      <li><em>Bloques Grandes:</em> Para apilar, golpear y derribar.</li>
+                      <li><em>Meter y Sacar Objetos:</em> De recipientes de boca ancha.</li>
+                      <li><em>Juguetes de Encajar Simples:</em> Formas grandes.</li>
+                      <li><em>Explorar Dedos:</em> Comida que pueda coger con los dedos (trozos de fruta blanda, galletas de bebé).</li>
+                  </ul>
+              </li>
+              <li><strong>Juegos Interactivos:</strong> "Los lobitos", esconder objetos bajo un pañuelo para que los encuentre, imitar gestos y sonidos, canciones con movimientos.</li>
             </ul>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-header">1-2 Años</button>
+          <button class="accordion-header">Estimulación para 1-2 Años</button>
           <div class="accordion-content">
+            <p><strong>Objetivo Principal:</strong> Consolidar la marcha, iniciar habilidades como correr y subir escalones, y refinar la coordinación ojo-mano.</p>
             <ul>
-              <li><strong>Sensorial:</strong> Pintura de dedos, jugar con arena o agua (supervisado), plastilina.</li>
-              <li><strong>Motricidad Gruesa:</strong> Caminar por diferentes superficies, subir y bajar pequeños escalones, empujar y tirar juguetes con ruedas, bailar.</li>
-              <li><strong>Motricidad Fina:</strong> Encajables, rompecabezas simples, garabatear con ceras gruesas, construir torres más altas.</li>
-              <li><strong>Juegos:</strong> Perseguir burbujas, juegos de imitación (animales, tareas domésticas).</li>
+              <li><strong>Sensorial:</strong> Pintura de dedos (comestible al principio), jugar con arena o agua (siempre supervisado), plastilina casera o comercial no tóxica, libros con más detalles.</li>
+              <li><strong>Motricidad Gruesa:</strong>
+                  <ul>
+                      <li><em>Caminar por Diferentes Superficies:</em> Césped, arena, alfombras, suelo liso.</li>
+                      <li><em>Subir y Bajar Pequeños Escalones o Bordillos:</em> Con ayuda al principio.</li>
+                      <li><em>Empujar y Tirar Juguetes con Ruedas:</em> Carritos, correpasillos.</li>
+                      <li><em>Bailar:</em> Poner música y moverse libremente.</li>
+                      <li><em>Juegos de Pelota:</em> Rodar y lanzar pelotas blandas y grandes.</li>
+                  </ul>
+              </li>
+              <li><strong>Motricidad Fina:</strong>
+                  <ul>
+                      <li><em>Encajables y Rompecabezas Simples:</em> De 2-4 piezas con pomos grandes.</li>
+                      <li><em>Garabatear:</em> Con ceras gruesas, rotuladores lavables en papel grande.</li>
+                      <li><em>Construir Torres Más Altas:</em> Con bloques.</li>
+                      <li><em>Rasgar Papel:</em> Tiras de papel de revista.</li>
+                      <li><em>Abrir y Cerrar Recipientes:</em> Cajas con tapas sencillas.</li>
+                  </ul>
+              </li>
+              <li><strong>Juegos Interactivos:</strong> Perseguir burbujas, juegos de imitación (animales, tareas domésticas), leer cuentos señalando imágenes.</li>
             </ul>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-header">2-4 Años</button>
+          <button class="accordion-header">Estimulación para 2-4 Años</button>
           <div class="accordion-content">
+            <p><strong>Objetivo Principal:</strong> Mejorar la coordinación dinámica general (correr, saltar), el equilibrio, y desarrollar una mayor precisión en la motricidad fina.</p>
             <ul>
-              <li><strong>Sensorial:</strong> Identificar objetos por el tacto (bolsa misteriosa), juegos con olores.</li>
-              <li><strong>Motricidad Gruesa:</strong> Correr, saltar, lanzar y patear pelotas, circuitos de obstáculos, montar en triciclo.</li>
-              <li><strong>Motricidad Fina:</strong> Recortar con tijeras de punta redonda, dibujar formas, ensartar cuentas más pequeñas, modelar plastilina.</li>
-              <li><strong>Juegos:</strong> Juegos de construcción, disfraces, representaciones sencillas.</li>
+              <li><strong>Sensorial:</strong> Identificar objetos por el tacto (bolsa misteriosa con objetos cotidianos), juegos con olores (especias suaves, frutas), clasificar por formas y colores.</li>
+              <li><strong>Motricidad Gruesa:</strong>
+                  <ul>
+                      <li><em>Correr, Saltar, Trepar:</em> En parques o espacios seguros.</li>
+                      <li><em>Lanzar y Patear Pelotas:</em> Con mayor intención y dirección.</li>
+                      <li><em>Circuitos de Obstáculos:</em> Pasar por debajo de mesas, saltar cojines, caminar sobre una línea.</li>
+                      <li><em>Montar en Triciclo o Bicicleta sin Pedales (balance bike).</em></li>
+                      <li><em>Juegos de Equilibrio:</em> Caminar sobre un bordillo bajo, intentar mantenerse a la pata coja.</li>
+                  </ul>
+              </li>
+              <li><strong>Motricidad Fina:</strong>
+                  <ul>
+                      <li><em>Recortar con Tijeras de Punta Redonda:</em> Primero líneas rectas, luego curvas simples.</li>
+                      <li><em>Dibujar Formas y Primeros Monigotes:</em> Círculos, cuadrados, intentar dibujar personas.</li>
+                      <li><em>Ensartar Cuentas Más Pequeñas o macarrones en un hilo.</em></li>
+                      <li><em>Modelar con Plastilina:</em> Hacer churros, bolas, formas simples.</li>
+                      <li><em>Rompecabezas:</em> De más piezas (10-20).</li>
+                      <li><em>Abrochar y Desabrochar Botones Grandes.</em></li>
+                  </ul>
+              </li>
+              <li><strong>Juegos Interactivos:</strong> Juegos de construcción más complejos, disfraces y juego simbólico, representaciones sencillas, juegos de mesa simples.</li>
             </ul>
           </div>
         </div>
         <div class="accordion-item">
-          <button class="accordion-header">4-6 Años</button>
+          <button class="accordion-header">Estimulación para 4-6 Años</button>
           <div class="accordion-content">
+            <p><strong>Objetivo Principal:</strong> Perfeccionar la coordinación, agilidad y fuerza; desarrollar habilidades motoras finas necesarias para la preescritura y mayor autonomía en el autocuidado.</p>
             <ul>
-              <li><strong>Sensorial:</strong> Experimentos sencillos, clasificar objetos por diferentes criterios.</li>
-              <li><strong>Motricidad Gruesa:</strong> Saltar a la cuerda, juegos de equilibrio, deportes adaptados (nadar, bicicleta con ruedines y luego sin ellas).</li>
-              <li><strong>Motricidad Fina:</strong> Dibujar con detalle, colorear dentro de los límites, escribir letras y números, juegos de mesa que requieran precisión.</li>
-              <li><strong>Juegos:</strong> Juegos de reglas más complejas, construcción avanzada, manualidades.</li>
+              <li><strong>Sensorial y Cognitivo-Motor:</strong> Experimentos científicos sencillos, juegos de construcción con instrucciones (Lego), clasificar objetos por múltiples criterios, juegos de memoria visual-espacial.</li>
+              <li><strong>Motricidad Gruesa:</strong>
+                  <ul>
+                      <li><em>Saltar a la Cuerda, Saltar a la Pata Coja con fluidez.</em></li>
+                      <li><em>Juegos de Equilibrio Más Desafiantes:</em> Caminar sobre una viga baja, rayuela.</li>
+                      <li><em>Deportes Adaptados:</em> Iniciación a la natación, fútbol, baloncesto, baile, artes marciales (enfocados en el juego y la participación).</li>
+                      <li><em>Montar en Bicicleta sin Ruedines.</em></li>
+                      <li><em>Juegos de Persecución y Relevos.</em></li>
+                  </ul>
+              </li>
+              <li><strong>Motricidad Fina:</strong>
+                  <ul>
+                      <li><em>Dibujar con Detalle:</em> Figuras humanas completas, escenas.</li>
+                      <li><em>Colorear Dentro de los Límites con Precisión.</em></li>
+                      <li><em>Preescritura:</em> Trazar líneas, bucles, formas pregráficas. Copiar letras y números. Escribir su nombre.</li>
+                      <li><em>Recortar Formas Complejas.</em></li>
+                      <li><em>Plegar Papel (origami simple).</em></li>
+                      <li><em>Atarse los Cordones, Abrochar Cremalleras y Botones Pequeños.</em></li>
+                      <li><em>Usar Cubiertos Correctamente (incluyendo cuchillo para untar o cortar alimentos blandos).</em></li>
+                  </ul>
+              </li>
+              <li><strong>Juegos Interactivos:</strong> Juegos de reglas más complejas (juegos de mesa, cartas), construcción avanzada (maquetas simples), manualidades que requieran varios pasos.</li>
             </ul>
           </div>
         </div>
@@ -222,10 +371,10 @@
     </section>
 
     <section id="simulador" class="slide-up">
-      <h2>Simulador Interactivo de Desarrollo</h2>
-      <p>Selecciona la edad del niño y algunas actividades de estimulación para ver un posible resultado.</p>
+      <h2>Simulador Interactivo de Desarrollo Motor</h2>
+      <p class="section-intro">Selecciona la edad del niño/a y las actividades de estimulación que sueles realizar o te gustaría probar. El simulador te ofrecerá una perspectiva lúdica sobre cómo estas actividades podrían influir en los hitos clave del desarrollo motor para esa etapa. ¡Experimenta y aprende!</p>
       <div class="simulator-controls">
-        <label for="sim-edad">Edad del Niño:</label>
+        <label for="sim-edad">Selecciona la Etapa de Edad:</label>
         <select id="sim-edad">
           <option value="0-6m">0-6 Meses</option>
           <option value="6-12m">6-12 Meses</option>
@@ -234,24 +383,27 @@
           <option value="4-6a">4-6 Años</option>
         </select>
 
-        <label>Actividades de Estimulación (selecciona varias):</label>
+        <label>Actividades de Estimulación Realizadas (marca varias):</label>
         <div id="sim-actividades-checkboxes">
           <!-- Checkboxes se cargarán con JS según la edad -->
         </div>
         <button onclick="iniciarSimulador()" class="action-button">Iniciar Simulación</button>
       </div>
       <div id="resultadoSimulacion">
-        <p><em>Los resultados aparecerán aquí...</em></p>
+        <p><em>Los resultados de la simulación aparecerán aquí, ofreciendo una visión sobre el posible progreso en los hitos motores...</em></p>
       </div>
       <button onclick="exportarResultados()" class="action-button" id="btnExportar" style="display:none;">Exportar Resultados (CSV)</button>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Pequeños Pasos, Grandes Saltos - Desarrollo Motor Infantil</p>
+    <svg class="footer-svg" viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 20 Q 25 0 50 20 T 100 20 T 150 20 T 200 20" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.5"/>
+        <path d="M0 25 Q 25 5 50 25 T 100 25 T 150 25 T 200 25" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.7"/>
+    </svg>
+    <p>© <span id="currentYear"></span> Pequeños Pasos, Grandes Saltos - Fomentando el Desarrollo Motor Infantil con Amor y Ciencia.</p>
   </footer>
 
-  <!-- Modal para detalles de autores -->
   <div id="autorModal" class="modal">
     <div class="modal-content">
       <span class="close-button">×</span>
@@ -266,5 +418,8 @@
   <audio id="sonidoHover" src="assets/sonido_hover_placeholder.mp3" preload="auto"></audio>
 
   <script src="script.js"></script>
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
